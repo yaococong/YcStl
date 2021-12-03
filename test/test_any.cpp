@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 
+using namespace yc;
 int main() {
 	any a = 0;
 	std::cout << a.type().name() << std::endl;
