@@ -4,11 +4,11 @@
 using namespace yc;
 
 int main() {
-	allocator<int> alloc;
+	allocator_y<int> alloc;
 
-	allocator<int>::pointer p = alloc.allocate(10);
+	allocator_y<int>::pointer p = alloc.allocate(10);
 
-	uninitialized_fill(p, p + 10, 1);
+	uninitialized_fill_y(p, p + 10, 1);
 
 	for (int i = 0; i < 10; ++i)
 		std::cout << *(p + i) << std::endl;
